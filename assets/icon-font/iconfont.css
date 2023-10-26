@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3841269 */
+  src: url('iconfont.woff2?t=1693382934843') format('woff2'),
+       url('iconfont.woff?t=1693382934843') format('woff'),
+       url('iconfont.ttf?t=1693382934843') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dashboard_arrowleft:before {
+  content: "\e7ee";
+}
+
+.icon-dashboard_Dollar:before {
+  content: "\e77d";
+}
+
+.icon-dashboard_Dollar-circle-fill:before {
+  content: "\e846";
+}
+
+.icon-dashboard_user:before {
+  content: "\e7ae";
+}
+
+.icon-dashboard_lock:before {
+  content: "\e7c9";
+}
+
+.icon-dashboard_control:before {
+  content: "\e795";
+}
+
+.icon-dashboard_detail:before {
+  content: "\e793";
+}
+
+.icon-dashboard_YUAN:before {
+  content: "\e785";
+}
+
+.icon-dashboard_transaction:before {
+  content: "\e786";
+}
+
+.icon-dashboard_piechart:before {
+  content: "\e78f";
+}
+
+.icon-dashboard_barchart:before {
+  content: "\e7b0";
+}
+
+.icon-dashboard_audit:before {
+  content: "\e7bf";
+}
+
+.icon-dashboard_bulb:before {
+  content: "\e7c3";
+}
+
+.icon-dashboard_deploymentunit:before {
+  content: "\e7d2";
+}
+
+.icon-dashboard_cluster:before {
+  content: "\e7d7";
+}
+
+.icon-dashboard_notification:before {
+  content: "\e7da";
+}
+
+.icon-dashboard_fund:before {
+  content: "\e7de";
+}
+
+.icon-dashboard_creditcard:before {
+  content: "\e7df";
+}
+
+.icon-dashboard_monitor:before {
+  content: "\e7e2";
+}
+
+.icon-dashboard_setting:before {
+  content: "\e78e";
+}
+
+.icon-dashboard_touxiang:before {
+  content: "\e691";
+}
+
+.icon-dashboard_home:before {
+  content: "\e7c6";
+}
+
+.icon-dashboard_appstore:before {
+  content: "\e792";
+}
+
+.icon-dashboard_layout:before {
+  content: "\e794";
+}
+
+.icon-dashboard_team:before {
+  content: "\e7af";
+}
+
+.icon-dashboard_yuebuzu:before {
+  content: "\e60c";
+}
+
+.icon-dashboard_daixuanze:before {
+  content: "\e63c";
+}
+
+.icon-dashboard_jiesuo1:before {
+  content: "\e8d5";
+}
+
+.icon-dashboard_jiantou_zuoyouqiehuan:before {
+  content: "\eb0d";
+}
+
