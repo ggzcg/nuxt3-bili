@@ -7,7 +7,7 @@
       <i class="iconfont ic_search_tab"></i>
     </a>
     <a class="face" href="#">
-      <img src="@/assets/images/pc/login.png" />
+      <img src="@/assets/images/pc/login_pic.png" />
     </a>
     <div class="down-app">下载 APP</div>
   </header>
