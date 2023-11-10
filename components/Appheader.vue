@@ -7,15 +7,13 @@
       <i class="iconfont ic_search_tab"></i>
     </a>
     <a class="face" href="#">
-      <img src="@/assets/images/login.png" />
+      <img src="@/assets/images/pc/login.png" />
     </a>
     <div class="down-app">下载 APP</div>
   </header>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss">
 .app-header {
