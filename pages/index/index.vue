@@ -1,46 +1,46 @@
 <script setup lang="ts">
-import type { VideoTs } from '~/types/video';
+import type { VideoTs } from "~/types/video";
 
 //
-const channelList: any = (await useFetch('/api/channel')).data
-const videoList: any = (await useFetch('/api/video')).data
-console.log(await useFetch('/api/video'))
+const channelList: any = (await useFetch("/api/channel")).data;
+const videoList: any = (await useFetch("/api/video")).data;
+console.log(await useFetch("/api/video"));
 useSeoMeta({
-  referrer: 'no-referrer'
-})
+  referrer: "no-referrer",
+});
 
 // 显示的列表
-const list = ref<VideoTs[]>([])
+const list = ref<VideoTs[]>([]);
 // 加载状态
-const loading = ref(false)
+const loading = ref(false);
 // 是否加载完成
-const finished = ref(false)
+const finished = ref(false);
 
 // 页码 和 页容量
-let page = 1
-let pageSize = 20
+let page = 1;
+let pageSize = 20;
 
 // 滚动触底触发
 const onLoad = () => {
   // 表示正在加载
-  loading.value = false
+  loading.value = false;
   // 根据当前页码提取数据
   const data = videoList.value?.slice(
     (page - 1) * pageSize,
-    page * pageSize,
-  ) as any[]
+    page * pageSize
+  ) as any[];
   // 追加到用于渲染的数组中
-  list.value.push(...data)
+  list.value.push(...data);
   // 页码累加
-  page++
+  page++;
   // 加载结束
   if (videoList.value?.length === list.value.length) {
-    finished.value = true
+    finished.value = true;
   }
-}
+};
 
 // 初始化加载 - 主动请求前 20 条数据，用于服务端首屏渲染，方便 SEO 抓取到数据
-onLoad()
+onLoad();
 </script>
 
 <template>
@@ -48,7 +48,7 @@ onLoad()
   <Appheader></Appheader>
   <!-- 频道模块 -->
   <van-tabs>
-    <van-tab v-for="(item) in channelList" :key="item.id" :title="item.name" />
+    <van-tab v-for="item in channelList" :key="item.id" :title="item.name" />
   </van-tabs>
   <!-- 视频列表 -->
   <van-list
@@ -62,7 +62,6 @@ onLoad()
       <AppList v-for="item in list" :key="item.bvid" :item="item"></AppList>
     </div>
   </van-list>
-
 </template>
 
 <style lang="scss">
@@ -118,7 +117,7 @@ onLoad()
   padding: 0 5px 10px;
   .card {
     position: relative;
-    background: #f3f3f3 url(@/assets/images/default.png) center no-repeat;
+    background: #f3f3f3 url(@/assets/images/pc/login_bg.jpg) center no-repeat;
     background-size: 36%;
     border-radius: 2px;
     overflow: hidden;
